@@ -11,7 +11,7 @@ router.post('/login', login);
 // Product registration 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, 'E:/bloghunch/frontend/src/chobi2');
+      cb(null, 'E:/bloghunch_task/frontend/src/chobi2');
     },
     filename: (req, file, cb) => {
       cb(null, `${Date.now()}_${file.originalname}`);

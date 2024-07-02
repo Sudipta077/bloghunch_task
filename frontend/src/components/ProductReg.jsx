@@ -7,7 +7,7 @@ const ProductRegistration = () => {
   const handleSubmit=async(e)=>{
     e.preventDefault();
     const token = localStorage.getItem('token');
-    alert(token);
+    
     const formData = new FormData(e.target);
     formData.append('token',token);
     try {
